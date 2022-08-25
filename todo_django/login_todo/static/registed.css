@@ -1,0 +1,23 @@
+@font-face {
+    font-family:'komorebi';
+    src: url('komorebi-gothic.ttf') format('truetype');
+}
+
+.explain{
+    font-family: 'komorebi';
+    margin-top: 30px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.to_login_page{
+    cursor: pointer;
+    font-family: 'komorebi';
+    width: 200px;
+    height: 30px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #333;
+}

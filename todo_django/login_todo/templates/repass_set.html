@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>
+        パスワードリセット画面
+    </title>
+</head>
+<body>
+    <div class="check_txt">
+        以下のフォームにメールにて送られてきた4桁の数字、そして<br>
+        変更後のパスワードを入力してください。<br>
+        300秒経つとパスワードが無効化されます。
+    </div>
+    <form name="passreset_info" method="POST" action="">
+        {% csrf_token %}
+        <input type="number" name="secretnumber" min="1000" max="9999">
+        <input type="text" name="repass">
+        <div id="submitbutton">
+            パスワードを変更
+        </div>
+    </form>
+    <script src="{% static 'repass_set.js' %}"></script>
+</body>

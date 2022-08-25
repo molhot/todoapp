@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>
+        登録に失敗しました
+    </title>
+    <link rel="stylesheet" href="{% static 'registed.css' %}">
+</head>
+<body>
+    <div class="explain">
+        メールアドレスは既に登録されています。<br>
+        パスワードを忘れられた場合は
+        <a href="repass">こちら</a>
+        から再度パスワードを登録してください。
+    </div>
+    <div class="to_login_page" id="to_login_page_button">
+        ログインページに戻る
+    </div>
+    <script src="{% static 'registed.js' %}"></script>
+</body>

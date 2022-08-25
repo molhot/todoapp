@@ -1,0 +1,80 @@
+@font-face {
+    font-family:'komorebi';
+    src: url('komorebi-gothic.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color: silver;
+    font-family: 'komorebi';
+}
+
+.explain{
+    text-align: center;
+    font-family: 'komorebi';
+    margin-bottom: 20px;
+}
+
+.mail_format{
+    font-family: 'komorebi';
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mail_text{
+    display:inline-block;
+    margin-bottom: 10px;
+}
+
+.password_format{
+    font-family: 'komorebi';
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pass_text{
+    display:inline-block;
+    margin-bottom: 10px;
+}
+
+.login_button{
+    font-family: 'komorebi';
+    font-size: 30px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #333;
+    border-radius: 0.4em;
+
+    cursor: pointer;
+}
+
+.login_button_text{
+    height: 40px;
+    vertical-align: middle;
+}
+
+.regist_form{
+    font-family: 'komorebi';
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.re_password{
+    cursor: pointer;
+    font-family: 'komorebi';
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+}

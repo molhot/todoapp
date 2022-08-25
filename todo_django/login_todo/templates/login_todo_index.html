@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        ログインページ
+    </title>
+    <link rel="stylesheet" href="{% static 'login_todo_index.css' %}">
+</head>
+<body>
+    <h1>
+        みんなの仕事が見える化
+    </h1>
+    <div class="explain">
+        お互いにその日にどれだけタスクがあるか、<br>
+        みえるかします<br>
+    </div>
+    <form action="todo" method="POST" name="login_info_form">
+        {% csrf_token %}
+        <div class="login_info_input" id="information_login" name="information_login">
+            <div class="mail_format">
+                <label for="mailaddress" class="mail_text">メールアドレスの入力をお願いします</label><br>
+                <input type="email" id="mailsddress_info" name="mailsddress_info" required>
+            </div>
+            <div class="password_format">
+                <label for="password" class="pass_text">パスワードの入力をお願いします</label><br>
+                <input id="password_info" required minlength="8" name="password_info">
+            </div>
+        </div>
+        <div id="login_button" class="login_button">
+            <span class="login_button_text">ログイン</span>
+        </div>
+    </form>
+    <div class="regist_form">
+        <div class="move_for_registpage">
+            <a href="registaccount">アカウント登録ページ</a>
+        </div>
+    </div>
+    <div class="re_password">
+        <div class="re_password_button" id="re_password_button">
+            パスワードの再設定
+        </div>
+    </div>
+    <script src="{% static 'login_todo_index.js' %}"></script>
+</body>

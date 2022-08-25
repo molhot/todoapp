@@ -1,0 +1,119 @@
+html{
+    margin:0;
+}
+
+@font-face {
+    font-family:'komorebi';
+    src: url('komorebi-gothic.ttf') format('truetype');
+}
+
+h2{
+    text-align: center;
+}
+
+.ex_text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mailaddress_regist{
+    position: relative;
+    width:400px;
+    height:80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mailaddress_regist:before{
+    position:absolute;
+
+    content:"";
+    box-sizing: border-box;
+
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height:30px;
+
+    border-top: 4px solid #333;
+    border-left: 4px solid #333;
+}
+
+.mailaddress_regist:after{
+    position:absolute;
+
+    content:"";
+    box-sizing: border-box;
+
+    bottom: 0;
+    right: 0;
+
+    width: 30px;
+    height:30px;
+
+    border-bottom: 4px solid #333;
+    border-right: 4px solid #333;
+}
+
+.password_regist{
+    position: relative;
+    width:400px;
+    height:80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.password_regist:before{
+    position:absolute;
+
+    content:"";
+    box-sizing: border-box;
+
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height:30px;
+
+    border-top: 4px solid #333;
+    border-left: 4px solid #333;
+}
+
+.password_regist:after{
+    position:absolute;
+
+    content:"";
+    box-sizing: border-box;
+
+    bottom: 0;
+    right: 0;
+
+    width: 30px;
+    height:30px;
+
+    border-bottom: 4px solid #333;
+    border-right: 4px solid #333;
+}
+
+.regist_check_button_text{
+    text-align: center;
+}
+
+.regist_check_button{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}

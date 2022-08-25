@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<head>    
+    <title>
+        パスワード再設定画面
+    </title>
+    <link rel="stylesheet" href="{% static 'repass.css' %}">
+</head>
+<body>
+    <div class="explain">
+        パスワードを再設定します。<br>
+        再設定に使うメールアドレスを入力してください、入力後、送信ボタンのクリックをお願いします<br>
+    </div>
+    <div class="e_mail_info">
+        <input type="mail" id="mail" class="e_mail">
+        <div id="repass_mail" class="repass_mail">
+            送信
+        </div>
+    </div>
+    <script src="{% static 'repass.js' %}"></script>
+</body>

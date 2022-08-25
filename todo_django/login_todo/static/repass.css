@@ -1,0 +1,27 @@
+@font-face {
+    font-family:'komorebi';
+    src: url('komorebi-gothic.ttf') format('truetype');
+}
+
+.explain{
+    font-family: 'komorebi';
+    text-align: center;
+    margin-top: 30px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.e_mail_info{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.repass_mail{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width:60px;
+    border: 1px solid #333;
+}

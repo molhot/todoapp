@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        アカウント登録ページ
+    </title>
+    <link rel="stylesheet" href="{% static 'registaccount.css' %}">
+</head>
+<body>
+    <h2>
+        アカウント登録画面です
+    </h2>
+    <div class="ex_text">
+        メールアドレスとパスワードを登録してください
+    </div>
+    <form action="regist_processing" method="post">
+        {% csrf_token %}
+        <div class="mailaddress_regist">
+            <label for="mailaddress">
+                <span class="mailaddress_regist_text">メールアドレスの入力をお願いいたします</span><br>
+                <input type="mail" id="mail" name="mail">
+            </label>
+        </div>
+        <div class="password_regist">
+            <label for="password">
+                <span class="password_regist_text">パスワードの入力をお願いいたします</span><br>
+                <span class="password_arrangement">パスワードは8文字以上でお願いいたします</span><br>
+                <input type="text" id="pass" name="pass">
+            </label>
+        </div>
+        <div class="regist_check_button_text" id="regist_check_button_text_id">
+            登録するメールアドレスが決まれば確認をクリックしてください
+            <div class="regist_check_button" id="registbutton">
+                確認
+            </div>
+        </div>
+    </form>
+    <script src="{% static 'regist.js' %}"></script>
+</body>
